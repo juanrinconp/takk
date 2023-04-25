@@ -9,9 +9,9 @@
   <!--
     - primary meta tags
   -->
-  <title>Juan Esteban - Economist | Data Scientist.</title>
-  <meta name="title" content="Juan Esteban Rincón">
-  <meta name="description" content="Portafolio">
+  <title>TAKK - Marketing Digital</title>
+  <meta name="title" content="TAKK - Agencia de Marketing Digital">
+  <meta name="description" content="Agencia de Marketing Digital">
 
   <!--
     - favicon
@@ -19,22 +19,21 @@
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
   <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
-
-  <!--
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
   <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!--
     - preload images
   -->
-  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
-  <link rel="preload" as="image" href="./assets/images/Blog.svg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
 
 </head>
 
@@ -48,66 +47,25 @@
     <div class="container">
 
       <a href="#" class="logo">
-        <img src="./favicon.svg" width="64" height="24" alt="Juanes home">
+        <img src="./assets/images/logo.png" width="209" height="52" alt="dprod logo">
       </a>
 
       <nav class="navbar" data-navbar>
 
-        <div class="navbar-top">
-          <a href="#" class="logo">
-            <img src="./assets/images/logo-light.svg" width="64" height="24" alt="Juanes home">
-          </a>
-
-          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
-            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-          </button>
-        </div>
+        <p class="navbar-title">Main Menu</p>
 
         <ul class="navbar-list">
 
-          <li>
-            <a href="#" class="navbar-link">About</a>
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>Inicio</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="#services" class="navbar-link" data-nav-link>Servicios</a>
           </li>
 
-          <li>
-            <a href="#sobre" class="navbar-link">Skills</a>
-          </li>
-
-          <li>
-            <a href="#proyectos" class="navbar-link">Projects</a>
-          </li>
-
-
-          <li>
-            <a href="https://www.linkedin.com/in/juanrinconp/" target="_blank" class="navbar-link">Contact</a>
-          </li>
-
-        </ul>
-
-        <div class="wrapper">
-          <a href="mailto:uan.rinconp@hotmail.com" class="contact-link">juan.rinconp@hotmail.com</a>
-
-          <a href="tel:3142192278" class="contact-link">+57 3142192278</a>
-        </div>
-
-        <ul class="social-list">
-
-          <li>
-            <a href="https://github.com/juanrinconp" target="_blank" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://www.instagram.com/juanes.rinconp/" target="_blank" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://www.youtube.com/channel/UCwWW8vfwtnyr3xeUFMR4Gjg" target="_blank" class="social-link">
-              <ion-icon name="logo-youtube"></ion-icon>
-            </a>
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-link>Sobre Nosotros</a>
           </li>
 
 
@@ -119,6 +77,8 @@
       <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
         <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
       </button>
+
+      <a href="https://wa.link/j107kt" target="_blank" class="btn btn-primary">Contacto</a>
 
       <div class="overlay" data-nav-toggler data-overlay></div>
 
@@ -136,32 +96,137 @@
         - #HERO
       -->
 
-      <section class="section hero" aria-label="home">
+      <section class="section hero" id="home" aria-label="home">
         <div class="container">
-
-          <figure class="hero-banner">
-            <img src="./assets/images/hero-banner.jpg" width="560" height="540" alt="Juanes" class="w-100"
-              data-reveal="top">
-
-
-          </figure>
 
           <div class="hero-content">
 
-            <h1 class="h1 hero-title" data-reveal="top" data-reveal-delay="0.5s">
-               Juan Esteban
+            <h1 class="h1 section-title">
+              Agencia de <span class="span">Marketing</span> digital
             </h1>
 
-            <p class="section-text" data-reveal="top" data-reveal-delay="0.75s">
-              Economist from the Pontificia Universidad Javeriana with experience in data management, analysis and visualization using SQL, Python and Tableau.
+            <p class="section-text">
+              Diseñamos y construimos soluciones para las marcas más ambiciosas.
             </p>
-
-            <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
-
-              <a href="https://www.linkedin.com/in/juanrinconp/" target="_blank" class="btn btn-secondary">Contact</a>
-            </div>
+            <div class="about-content">
 
           </div>
+
+          </div>
+
+          <figure class="hero-banner has-shape">
+
+            <img src="./assets/images/hero-banner.png" width="521" height="675" alt="hero banner" class="w-100">
+
+            <img src="./assets/images/hero-shape-1.svg" width="106" height="78" alt="" class="shape">
+
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!--
+        - #SERVICES
+      -->
+
+      <section class="section service has-shape" id="services" aria-label="service">
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">
+              Nuestros <span class="span">servicios</span>.
+            </h2>
+
+            <p class="section-text">
+              Nos gusta trabajar con personas apasionadas. Llegar a las respuestas correctas requiere trabajo, compromiso, lógica y varios momentos de iluminación.
+
+            </p>
+          </div>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./assets/images/service-1.svg" width="60" height="60" loading="lazy" alt="service icon">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Diseño Sitios Web</a>
+                </h3>
+
+                <p class="card-text">
+                  Diseñamos un sitio web unico y personalizado para tu empresa.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./assets/images/service-2.svg" width="60" height="60" loading="lazy" alt="service icon">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Gestión Redes</a>
+                </h3>
+
+                <p class="card-text">
+                  Nos encargamos de administrar tus redes sociales.
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./assets/images/service-3.svg" width="60" height="60" loading="lazy" alt="service icon">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Diseño Gráfico</a>
+                </h3>
+
+                <p class="card-text">
+                  Creamos el diseño de empaques y etiquetas de tu producto.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./assets/images/service-4.svg" width="60" height="60" loading="lazy" alt="service icon">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Online Marketing</a>
+                </h3>
+
+                <p class="card-text">
+                 Desarrollamos estrategias digitales para posicionar tu negocio.
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/circle-shape.svg" width="158" height="158" loading="lazy" alt=""
+            class="shape shape-1">
+
+          <img src="./assets/images/triangle-shape-1.svg" width="158" height="158" loading="lazy" alt=""
+            class="shape shape-2">
 
         </div>
       </section>
@@ -174,80 +239,27 @@
         - #ABOUT
       -->
 
-      <section id="sobre" class="section about" aria-label="about">
+      <section class="section about" id="about" aria-label="about">
         <div class="container">
 
-          <div class="wrapper">
+          <figure class="about-banner has-shape">
+            <img src="./assets/images/about-banner.png" width="500" height="611" loading="lazy" alt="about banner"
+              class="w-100">
 
-            <div data-reveal="left">
-              <h2 class="h2 section-title">About me</h2>
+            <img src="./assets/images/banner-shape.svg" width="108" height="86" loading="lazy" alt="" class="shape">
+          </figure>
 
-              <p class="section-text">
-                Data analytics consultant for Cisco. Previously I worked at procolombia in the export planning department and at the Pontificia Universidad Javeriana as Research Assistant and Teaching Assistant for the econometrics courses (undergraduate and graduate).
-              </p>
-            </div>
+          <div class="about-content">
 
-            <ul class="progress-list" data-reveal="right">
+            <h2 class="h2 section-title">
+              Agencia de <span class="span">Marketing</span> que se adapta a tus necesidades.
+            </h2>
 
-              <li class="progress-item">
+            <p class="section-text">
+              En TAKK te ofrecemos un soporte completo en el desarrollo de estrategias digitales, la creación y rediseño de sitios web, la implementación de estrategias SEO, la creación y optimización de anuncios digitales operativos así como el seguimiento y soporte digital para tu empresa.
+            </p>
 
-                <div class="label-wrapper">
-                  <p>SQL, Python & Tableau</p>
-
-                  <span class="span">80 %</span>
-                </div>
-
-                <div class="progress">
-                  <div class="progress-fill" style="width: 80%; background-color: #253d7c"></div>
-                </div>
-
-              </li>
-
-              <li class="progress-item">
-
-                <div class="label-wrapper">
-                  <p>STATA</p>
-
-                  <span class="span">70 %</span>
-                </div>
-
-                <div class="progress">
-                  <div class="progress-fill" style="width: 70%; background-color: #3a5089"></div>
-                </div>
-
-              </li>
-
-
-              <li class="progress-item">
-
-                <div class="label-wrapper">
-                  <p>R, HTML & CSS</p>
-
-                  <span class="span">50 %</span>
-                </div>
-
-                <div class="progress">
-                  <div class="progress-fill" style="width: 50%; background-color: #4d6194"></div>
-                </div>
-
-              </li>
-              <li class="progress-item">
-
-                <div class="label-wrapper">
-                  <p>Adobe Premiere, Photoshop & Illustrator</p>
-
-                  <span class="span">70 %</span>
-                </div>
-
-                <div class="progress">
-                  <div class="progress-fill" style="width: 70%; background-color: #5e709e"></div>
-                </div>
-
-              </li>
-
-
-
-            </ul>
+            <a href="https://wa.link/j107kt" target="_blank" class="btn btn-outline">Contacto</a>
 
           </div>
 
@@ -262,188 +274,167 @@
         - #PROJECT
       -->
 
-      <section id="proyectos" class="section project" aria-labelledby="project-label">
+      <section class="section project" aria-label="project">
         <div class="container">
 
-          <div class="title-wrapper" data-reveal="top">
+          <div class="title-wrapper">
 
             <div>
-              <h2 class="h2 section-title" id="project-label">Last Projects</h2>
+              <h2 class="h2 section-title">
+                <span class="span">Proyectos</span> recientes.
+              </h2>
 
-
+              <p class="section-text">
+                ¡Descubre los resultados de las estrategias digitales realizadas para nuestros clientes! ¿Estás convencido? Toma una cita directamente con un experto para discutir!
+              </p>
             </div>
+
+
+
+            </a>
 
           </div>
 
-          <ul class="grid-list">
+          <ul class="project-list">
 
             <li>
-              <div class="project-card project-card-1" style="background-color: #f1f5fd">
+              <div class="project-card">
 
-                <div class="card-content" data-reveal="left">
-
-                  <p class="card-tag" style="color: #213549">Python , Rstudio</p>
-
-                  <h3 class="h3 card-title">VAR analysis of the effect of Procolombia on economic growth</h3>
-
-                  <p class="card-text">
-                    Autoregressive vector and impulse response analysis on the impact of the growth of non-mining energy exports on the economic growth of Colombia in the short and long term. Article published in the journal of master's students of the Javeriana University.
-                  </p>
-
-                  <a href="https://drive.google.com/file/d/1IEzuZ9e7k_TkHgep7AO9E051av-8FjUA/view" target="_blank" class="btn-text" style="color: #002D5A">
-                    <span class="span">More</span>
-
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-
-                <figure class="card-banner" data-reveal="right">
-                  <img src="./assets/images/project-10.png" width="650" height="370" loading="lazy" alt="Web Design"
-                    class="w-100">
+                <figure class="card-banner img-holder" style="--width: 615; --height: 391;">
+                  <img src="./assets/images/project-1.png" width="615" height="391" loading="lazy"
+                    alt="Plastic Credit Card" class="img-cover">
                 </figure>
+
+                <div class="card-content">
+
+                  <div>
+                    <h3 class="h3">
+                      <a class="card-title hover:underline">Café Cascada Florian</a>
+                    </h3>
+
+                    <p class="card-tag">Diseño empaque para exportación</p>
+                  </div>
+                  <!--
+
+                  <a href="#" class="card-link" aria-label="product details">
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+                  - #SERVICES
+                -->
+                </div>
 
               </div>
             </li>
 
             <li>
-              <div class="project-card project-card-2" style="background-color: #DCE2EE">
+              <div class="project-card">
 
-                <div class="card-content" data-reveal="right">
+                <figure class="card-banner img-holder" style="--width: 615; --height: 391;">
+                  <img src="./assets/images/project-2.png" width="615" height="391" loading="lazy" alt="3D Illustration"
+                    class="img-cover">
+                </figure>
 
-                  <p class=" card-tag" style="color: #002D5A">Python</p>
+                <div class="card-content">
 
-                  <h3 class="h3 card-title">Procolombia Reports Automation</h3>
+                  <div>
+                    <h3 class="h3">
+                      <a class="card-title hover:underline">Westpoint Security LTDA</a>
+                    </h3>
 
-                  <p class="card-text">
-                    The department of export planning in Procolombia delivers to the vice-presidency of exports different reports created with information from commercial offices around the world. The creation of these reports took more than 8 hours per week. In Python I made an automation that cleaned the information, crossed databases and created these reports automatically.
-                  </p>
+                    <p class="card-tag">Sitio Web, Logo y Campaña en google ads</p>
+                  </div>
 
-                  <a href="https://github.com/juanrinconp/Procolombia" target="_blank" class="btn-text" style="color: #002D5A">
-                    <span class="span">More</span>
 
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
 
                 </div>
-
-                <figure class="card-banner" data-reveal="left">
-                  <img src="./assets/images/project-2.png" width="600" height="367" loading="lazy" alt="Web Design"
-                    class="w-100">
-                </figure>
 
               </div>
             </li>
 
             <li>
-              <div class="project-card project-card-3" style="background-color: #f1f5fd">
+              <div class="project-card">
 
-                <div class="card-content" data-reveal="left">
+                <figure class="card-banner img-holder" style="--width: 390; --height: 391;">
+                  <img src="./assets/images/project-3.png" width="390" height="391" loading="lazy"
+                    alt="Statistics Mobile App" class="img-cover">
+                </figure>
 
-                  <p class=" card-tag" style="color: #213549">STATA, HTML & CSS</p>
+                <div class="card-content">
 
-                  <h3 class="h3 card-title">Advanced Econometrics Website</h3>
+                  <div>
+                    <h3 class="h3">
+                      <a class="card-title hover:underline">Agony Fitness</a>
+                    </h3>
 
-                  <p class="card-text">
-                  Website that aimed to support the learning of theoretical and practical concepts of the advanced econometrics course. Additionally, on YouTube you can find some of the classes given using the codes available on the website.
-                  <a href="https://juanrinconp.github.io/Econometria_Avanzada/index.html" target="_blank" class="btn-text" style="color: #213549">
-                    <span class="span">More</span>
+                    <p class="card-tag">Sitio Web, Logo</p>
+                  </div>
 
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  <a href="#" class="card-link" aria-label="product details">
                   </a>
 
                 </div>
 
-                <figure class="card-banner" data-reveal="right">
-                  <img src="./assets/images/project-3.png" width="600" height="367" loading="lazy" alt="Web Design"
-                    class="w-100">
+              </div>
+            </li>
+
+
+            <!--
+
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 390; --height: 391;">
+                  <img src="./assets/images/project-4.png" width="390" height="391" loading="lazy"
+                    alt="Color Blending Effect" class="img-cover">
                 </figure>
+
+                <div class="card-content">
+
+                  <div>
+                    <h3 class="h3">
+                      <a href="#" class="card-title hover:underline">Color Blending Effect</a>
+                    </h3>
+
+                    <p class="card-tag">Design, Graphics</p>
+                  </div>
+
+                  <a href="#" class="card-link" aria-label="product details">
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
 
               </div>
             </li>
 
             <li>
-              <div class="project-card project-card-4" style="background-color: #DCE2EE">
+              <div class="project-card">
 
-                <div class="card-content" data-reveal="left">
+                <figure class="card-banner img-holder" style="--width: 390; --height: 391;">
+                  <img src="./assets/images/project-5.png" width="390" height="391" loading="lazy" alt="3D Animation"
+                    class="img-cover">
+                </figure>
 
-                  <p class=" card-tag" style="color: #002D5A">Python & STATA</p>
+                <div class="card-content">
 
-                  <h3 class="h3 card-title">Armed Conflict Project</h3>
+                  <div>
+                    <h3 class="h3">
+                      <a href="#" class="card-title hover:underline">3D Animation</a>
+                    </h3>
 
-                  <p class="card-text">
-Merge the Saber pro 2012 - 2019 bases together with Saber 11 2006 - 2018. Additional merge to identify students affected by the armed conflict in Colombia in the Saber 11 tests of the year 2013.                  </p>
+                    <p class="card-tag">Design, Dimension</p>
+                  </div>
 
-                  <a href="https://github.com/juanrinconp/SaberProYSaber11/blob/main/Cruce-Estudiantes-Conflicto.ipynb" target="_blank" class="btn-text" style="color: #002D5A">
-                    <span class="span">More</span>
-
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  <a href="#" class="card-link" aria-label="product details">
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                   </a>
 
                 </div>
 
-                <figure class="card-banner" data-reveal="right">
-                  <img src="./assets/images/project-4.png" width="620" height="370" loading="lazy" alt="Mobile Design"
-                    class="w-100">
-                </figure>
-
               </div>
             </li>
-
-            <li>
-              <div class="project-card project-card-3" style="background-color: #f1f5fd">
-
-                <div class="card-content" data-reveal="left">
-
-                  <p class=" card-tag" style="color: #213549">Python</p>
-
-                  <h3 class="h3 card-title">Python Linkedin Webscraping and Email Automation</h3>
-
-                  <p class="card-text">
-This project automates the process of job searching on LinkedIn by building a Python web scraper that will extract the last job postings and automatically send them as email notifications to a list of recipients at a given hour.                  <a href="https://github.com/juanrinconp/automated-emails" target="_blank" class="btn-text" style="color: #213549">
-                    <span class="span">More</span>
-
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-
-                <figure class="card-banner" data-reveal="right">
-                  <img src="./assets/images/project-5.png" width="600" height="367" loading="lazy" alt="Web Design"
-                    class="w-100">
-                </figure>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="project-card project-card-4" style="background-color: #DCE2EE">
-
-                <div class="card-content" data-reveal="left">
-
-                  <p class=" card-tag" style="color: #002D5A">Tableau</p>
-
-                  <h3 class="h3 card-title">Covid19 Dashboard</h3>
-
-                  <p class="card-text">
-                    This Tableau dashboard provides an overview of COVID-19 vaccination progress globally. It uses the data available in "Our World in Data" to display information on the number of partially and fully vaccinated people worldwide. The data is presented in interactive graphs and tables that allow users to explore and compare the information by country and continent.
-
-                  <a href="https://drive.google.com/file/d/1IEzuZ9e7k_TkHgep7AO9E051av-8FjUA/view" target="_blank" class="btn-text" style="color: #002D5A">
-                    <span class="span">More</span>
-
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-
-                <figure class="card-banner" data-reveal="right">
-                  <img src="./assets/images/project-1.png" width="620" height="370" loading="lazy" alt="Mobile Design"
-                    class="w-100">
-                </figure>
-
-              </div>
-            </li>
-
+  -->
           </ul>
 
         </div>
@@ -454,15 +445,174 @@ This project automates the process of job searching on LinkedIn by building a Py
 
 
       <!--
-        - #CONTACT
-      -->
 
 
+      <section class="section blog" id="blog" aria-label="blog">
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">
+              Our inside <span class="span">news</span>.
+            </h2>
+
+            <a href="#" class="btn-link">
+              <span class="span">Check Our All News</span>
+
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="blog-card">
+
+                <div class="card-banner img-holder" style="--width: 595; --height: 391;">
+                  <img src="./assets/images/blog-1.png" width="595" height="391" loading="lazy"
+                    alt="Designer's Checklist for Every UX Project." class="img-cover">
+
+                  <button class="card-tag">Grid Layout</button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="meta-list">
+
+                    <li class="meta-item">
+                      <img src="./assets/images/author-1.png" width="18" height="18" loading="lazy" alt="Alice Williams"
+                        class="author-img">
+
+                      <p class="meta-item-text">Alice Williams</p>
+                    </li>
+
+                    <li class="meta-item">
+                      <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="2022-12-20" class="meta-item-text">December 20, 2022</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title hover:underline">
+                      Designer's Checklist for Every UX Project.
+                    </a>
+                  </h3>
+
+                  <a href="#" class="btn-link">
+                    <span class="span">Read more</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <div class="card-banner img-holder" style="--width: 595; --height: 391;">
+                  <img src="./assets/images/blog-2.png" width="595" height="391" loading="lazy"
+                    alt="Designer's Checklist for Every UX Project." class="img-cover">
+
+                  <button class="card-tag">Grid Layout</button>
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="meta-list">
+
+                    <li class="meta-item">
+                      <img src="./assets/images/author-2.png" width="18" height="18" loading="lazy" alt="Jaxson Geldit"
+                        class="author-img">
+
+                      <p class="meta-item-text">Jaxson Geldit</p>
+                    </li>
+
+                    <li class="meta-item">
+                      <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="2022-12-20" class="meta-item-text">December 20, 2022</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title hover:underline">
+                      Designer's Checklist for Every UX Project.
+                    </a>
+                  </h3>
+
+                  <a href="#" class="btn-link">
+                    <span class="span">Read more</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <div class="card-banner img-holder" style="--width: 595; --height: 391;">
+                  <img src="./assets/images/blog-3.png" width="595" height="391" loading="lazy"
+                    alt="Designer's Checklist for Every UX Project." class="img-cover">
+
+                  <button class="card-tag">Grid Layout</button>
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="meta-list">
+
+                    <li class="meta-item">
+                      <img src="./assets/images/author-1.png" width="18" height="18" loading="lazy" alt="Cooper Saris"
+                        class="author-img">
+
+                      <p class="meta-item-text">Cooper Saris</p>
+                    </li>
+
+                    <li class="meta-item">
+                      <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="2022-12-20" class="meta-item-text">December 20, 2022</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title hover:underline">
+                      Designer's Checklist for Every UX Project.
+                    </a>
+                  </h3>
+
+                  <a href="#" class="btn-link">
+                    <span class="span">Read more</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
 
     </article>
   </main>
 
-
+  - #BLOG
+-->
 
 
 
@@ -473,32 +623,79 @@ This project automates the process of job searching on LinkedIn by building a Py
   <footer class="footer">
     <div class="container">
 
-      <p class="copyright">
-        Juan Esteban Rincón Poveda - 2023
-      </p>
+      <div class="footer-top section">
 
-      <ul class="social-list">
+        <div class="footer-brand">
 
-
-        <li>
-          <a href="https://github.com/juanrinconp" target="_blank" class="social-link">
-            <ion-icon name="logo-github"></ion-icon>
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.png" width="209" height="52" alt="dprod logo">
           </a>
-        </li>
 
-        <li>
-          <a href="https://www.instagram.com/juanes.rinconp/" target="_blank" class="social-link">
-            <ion-icon name="logo-instagram"></ion-icon>
-          </a>
-        </li>
+          <a class="footer-link">info@takkmarketing.co</a>
 
-        <li>
-          <a href="https://www.youtube.com/channel/UCwWW8vfwtnyr3xeUFMR4Gjg" target="_blank" class="social-link">
-            <ion-icon name="logo-youtube"></ion-icon>
-          </a>
-        </li>
+          <a href="tel:+573117053860" class="footer-link">+57 3117053860</a>
 
-      </ul>
+          <ul class="social-list">
+
+
+
+            <li>
+              <a href="https://instagram.com/takk.col/" target="_blank" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+
+              <!--
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            - #FOOTER
+          -->
+
+          </ul>
+
+        </div>
+
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="h4 footer-list-title">Servicios</p>
+          </li>
+
+          <li>
+            <a  class="footer-link">Mercadeo Digital</a>
+          </li>
+
+
+          <li>
+            <a class="footer-link">Optimización SEO</a>
+          </li>
+
+          <li>
+            <a class="footer-link">Creación de Contenido</a>
+          </li>
+
+          <li>
+            <a  class="footer-link">Comercio Electrónico</a>
+          </li>
+
+        </ul>
+
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="copyright">
+          Copyright 2022 TAKK S.A.S.
+        </p>
+
+      </div>
 
     </div>
   </footer>
@@ -510,7 +707,7 @@ This project automates the process of job searching on LinkedIn by building a Py
   <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/script.js" defer></script>
 
   <!--
     - ionicon link
