@@ -3,60 +3,54 @@
 
 
 /**
- * add event on element
- */
-
-const addEventOnElem = function (elem, type, callback) {
-  if (elem.length > 1) {
-    for (let i = 0; i < elem.length; i++) {
-      elem[i].addEventListener(type, callback);
-    }
-  } else {
-    elem.addEventListener(type, callback);
-  }
-}
-
-
-
-/**
  * navbar toggle
  */
 
+const navOpenBtn = document.querySelector("[data-nav-open-btn]");
 const navbar = document.querySelector("[data-navbar]");
-const navbarLinks = document.querySelectorAll("[data-nav-link]");
-const navTogglers = document.querySelectorAll("[data-nav-toggler]");
+const navCloseBtn = document.querySelector("[data-nav-close-btn]");
 const overlay = document.querySelector("[data-overlay]");
 
-const toggleNavbar = function () {
-  navbar.classList.toggle("active");
-  overlay.classList.toggle("active");
-  document.body.classList.toggle("active");
+const elemArr = [navCloseBtn, overlay, navOpenBtn];
+
+for (let i = 0; i < elemArr.length; i++) {
+  elemArr[i].addEventListener("click", function () {
+    navbar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  });
 }
 
-addEventOnElem(navTogglers, "click", toggleNavbar);
+/**
+ * toggle navbar & overlay when click any navbar-link
+ */
 
-const closeNavbar = function () {
-  navbar.classList.remove("active");
-  overlay.classList.remove("active");
-  document.body.classList.remove("active");
+const navbarLinks = document.querySelectorAll("[data-navbar-link]");
+
+for (let i = 0; i < navbarLinks.length; i++) {
+  navbarLinks[i].addEventListener("click", function () {
+    navbar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  });
 }
 
-addEventOnElem(navbarLinks, "click", closeNavbar);
+
 
 
 
 /**
- * header active when window scroll down to 100px
+ * header & go-top-btn active
+ * when window scroll down to 400px
  */
 
 const header = document.querySelector("[data-header]");
+const goTopBtn = document.querySelector("[data-go-top]");
 
-const activeElemOnScroll = function () {
-  if (window.scrollY > 100) {
+window.addEventListener("scroll", function () {
+  if (window.scrollY >= 400) {
     header.classList.add("active");
+    goTopBtn.classList.add("active");
   } else {
     header.classList.remove("active");
+    goTopBtn.classList.remove("active");
   }
-}
-
-addEventOnElem(window, "scroll", activeElemOnScroll);
+});
