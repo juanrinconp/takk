@@ -5,13 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!--
-    - primary meta tags
-  -->
-  <title>TAKK - Marketing Digital</title>
-  <meta name="title" content="TAKK - Agencia de Marketing Digital">
-  <meta name="description" content="Agencia de Marketing Digital">
+  <title>Takk Consulting - Where Data Finds its purpose</title>
 
   <!--
     - favicon
@@ -28,16 +22,12 @@
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <!--
-    - preload images
-  -->
-  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
-
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Source+Sans+Pro:wght@600;700&display=swap"
+    rel="stylesheet">
 </head>
 
-<body>
+<body id="top">
 
   <!--
     - #HEADER
@@ -46,41 +36,61 @@
   <header class="header" data-header>
     <div class="container">
 
-      <a href="#" class="logo">
-        <img src="./assets/images/logo.png" width="209" height="52" alt="dprod logo">
+      <div class="overlay" data-overlay></div>
+
+      <a href="#">
+        <h1 class="logo">Takk Consulting</h1>
       </a>
 
       <nav class="navbar" data-navbar>
 
-        <p class="navbar-title">Main Menu</p>
+        <div class="navbar-top">
+          <a href="#" class="logo">Takk Consulting</a>
+
+          <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
 
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <a href="#home" class="navbar-link" data-nav-link>Inicio</a>
-          </li>
-          
-          <li class="navbar-item">
-            <a href="#services" class="navbar-link" data-nav-link>Servicios</a>
+            <a href="#home" class="navbar-link" data-navbar-link>Home</a>
           </li>
 
           <li class="navbar-item">
-            <a href="#about" class="navbar-link" data-nav-link>Sobre Nosotros</a>
+            <a href="#about" class="navbar-link" data-navbar-link>About</a>
           </li>
 
+          <li class="navbar-item">
+            <a href="#services" class="navbar-link" data-navbar-link>Services</a>
+          </li>
 
+          <li class="navbar-item">
+            <a href="#features" class="navbar-link" data-navbar-link>Features</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#blog" class="navbar-link" data-navbar-link>Blog</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-navbar-link>Contact Us</a>
+          </li>
 
         </ul>
 
       </nav>
 
-      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      <a href="#" class="btn">
+        <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+
+        <span>Get A Quote</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
       </button>
-
-      <a href="https://wa.link/j107kt" target="_blank" class="btn btn-primary">Contacto</a>
-
-      <div class="overlay" data-nav-toggler data-overlay></div>
 
     </div>
   </header>
@@ -96,137 +106,27 @@
         - #HERO
       -->
 
-      <section class="section hero" id="home" aria-label="home">
+      <section class="hero" id="home">
         <div class="container">
 
           <div class="hero-content">
 
-            <h1 class="h1 section-title">
-              Agencia de <span class="span">Marketing</span> digital
-            </h1>
+            <p class="hero-subtitle">Data and Tech Advisory</p>
 
-            <p class="section-text">
-              Diseñamos y construimos soluciones para las marcas más ambiciosas.
+            <h2 class="h2 hero-title">Where Data Finds Its Purpose</h2>
+
+            <p class="hero-text">
+              Unlock the full potential of your business with expert consulting services in data analytics and AI.
             </p>
-            <div class="about-content">
+
+            <button class="btn">Learn More</button>
 
           </div>
 
-          </div>
-
-          <figure class="hero-banner has-shape">
-
-            <img src="./assets/images/hero-banner.png" width="521" height="675" alt="hero banner" class="w-100">
-
-            <img src="./assets/images/hero-shape-1.svg" width="106" height="78" alt="" class="shape">
-
+          <figure class="hero-banner">
+            <img src="./assets/images/hero-banner.png" width="694" height="529" loading="lazy" alt="hero-banner"
+              class="w-100 banner-animation">
           </figure>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!--
-        - #SERVICES
-      -->
-
-      <section class="section service has-shape" id="services" aria-label="service">
-        <div class="container">
-
-          <div class="title-wrapper">
-            <h2 class="h2 section-title">
-              Nuestros <span class="span">servicios</span>.
-            </h2>
-
-            <p class="section-text">
-              Nos gusta trabajar con personas apasionadas. Llegar a las respuestas correctas requiere trabajo, compromiso, lógica y varios momentos de iluminación.
-
-            </p>
-          </div>
-
-          <ul class="grid-list">
-
-            <li>
-              <div class="service-card">
-
-                <figure class="card-icon">
-                  <img src="./assets/images/service-1.svg" width="60" height="60" loading="lazy" alt="service icon">
-                </figure>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Diseño Sitios Web</a>
-                </h3>
-
-                <p class="card-text">
-                  Diseñamos un sitio web unico y personalizado para tu empresa.
-                </p>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <figure class="card-icon">
-                  <img src="./assets/images/service-2.svg" width="60" height="60" loading="lazy" alt="service icon">
-                </figure>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Gestión Redes</a>
-                </h3>
-
-                <p class="card-text">
-                  Nos encargamos de administrar tus redes sociales.
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <figure class="card-icon">
-                  <img src="./assets/images/service-3.svg" width="60" height="60" loading="lazy" alt="service icon">
-                </figure>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Diseño Gráfico</a>
-                </h3>
-
-                <p class="card-text">
-                  Creamos el diseño de empaques y etiquetas de tu producto.
-                </p>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <figure class="card-icon">
-                  <img src="./assets/images/service-4.svg" width="60" height="60" loading="lazy" alt="service icon">
-                </figure>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Online Marketing</a>
-                </h3>
-
-                <p class="card-text">
-                 Desarrollamos estrategias digitales para posicionar tu negocio.
-                </p>
-
-              </div>
-            </li>
-
-          </ul>
-
-          <img src="./assets/images/circle-shape.svg" width="158" height="158" loading="lazy" alt=""
-            class="shape shape-1">
-
-          <img src="./assets/images/triangle-shape-1.svg" width="158" height="158" loading="lazy" alt=""
-            class="shape shape-2">
 
         </div>
       </section>
@@ -239,27 +139,48 @@
         - #ABOUT
       -->
 
-      <section class="section about" id="about" aria-label="about">
+      <section class="section about" id="about">
         <div class="container">
 
-          <figure class="about-banner has-shape">
-            <img src="./assets/images/about-banner.png" width="500" height="611" loading="lazy" alt="about banner"
-              class="w-100">
-
-            <img src="./assets/images/banner-shape.svg" width="108" height="86" loading="lazy" alt="" class="shape">
+          <figure class="about-banner">
+            <img src="./assets/images/about-banner.png" width="700" height="532" loading="lazy" alt="about banner"
+              class="w-100 banner-animation">
           </figure>
 
           <div class="about-content">
 
-            <h2 class="h2 section-title">
-              Agencia de <span class="span">Marketing</span> que se adapta a tus necesidades.
-            </h2>
+            <h2 class="h2 section-title underline">Why Our Agency</h2>
 
-            <p class="section-text">
-              En TAKK te ofrecemos un soporte completo en el desarrollo de estrategias digitales, la creación y rediseño de sitios web, la implementación de estrategias SEO, la creación y optimización de anuncios digitales operativos así como el seguimiento y soporte digital para tu empresa.
+            <p class="about-text">
+              At Takk Consulting, we stand out as a leading tech and data consultancy, distinguished by our team's diverse expertise, tailored solutions, and commitment to excellence. By integrating cutting-edge technology and providing data-driven insights, we empower businesses to make informed decisions and achieve lasting success.
+
             </p>
 
-            <a href="https://wa.link/j107kt" target="_blank" class="btn btn-outline">Contacto</a>
+            <p class="about-text">
+              Our adaptable and agile approach ensures that we stay ahead of the curve, delivering transformative solutions that redefine what's possible in the dynamic world of technology and data analytics. Partner with us to unlock the full potential of your business in the digital age.
+            </p>
+
+            <ul class="stats-list">
+
+              <li class="stats-card">
+                <p class="h3 stats-title">+50</p>
+
+                <p class="stats-text">Satisfied Clients</p>
+              </li>
+
+              <li class="stats-card">
+                <p class="h3 stats-title">+25</p>
+
+                <p class="stats-text">Team Members</p>
+              </li>
+
+              <li class="stats-card">
+                <p class="h3 stats-title">+5</p>
+
+                <p class="stats-text">Years of Experience</p>
+              </li>
+
+            </ul>
 
           </div>
 
@@ -271,170 +192,75 @@
 
 
       <!--
-        - #PROJECT
+        - #SERVICE
       -->
 
-      <section class="section project" aria-label="project">
+      <section class="section service" id="services">
         <div class="container">
 
-          <div class="title-wrapper">
+          <h2 class="h2 section-title underline">Our Speciallization</h2>
 
-            <div>
-              <h2 class="h2 section-title">
-                <span class="span">Proyectos</span> recientes.
-              </h2>
-
-              <p class="section-text">
-                ¡Descubre los resultados de las estrategias digitales realizadas para nuestros clientes! ¿Estás convencido? Toma una cita directamente con un experto para discutir!
-              </p>
-            </div>
-
-
-
-            </a>
-
-          </div>
-
-          <ul class="project-list">
+          <ul class="service-list">
 
             <li>
-              <div class="project-card">
+              <div class="service-card">
 
-                <figure class="card-banner img-holder" style="--width: 615; --height: 391;">
-                  <img src="./assets/images/project-1.png" width="615" height="391" loading="lazy"
-                    alt="Plastic Credit Card" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <div>
-                    <h3 class="h3">
-                      <a class="card-title hover:underline">Café Cascada Florian</a>
-                    </h3>
-
-                    <p class="card-tag">Diseño empaque para exportación</p>
-                  </div>
-                  <!--
-
-                  <a href="#" class="card-link" aria-label="product details">
-                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                  </a>
-                  - #SERVICES
-                -->
+                <div class="card-icon">
+                  <ion-icon name="telescope-outline"></ion-icon>
                 </div>
+
+                <h3 class="h3 title">Discovery</h3>
+
+                <p class="text">
+
+Leveraging analytics, we explore technology to pinpoint client needs. By harnessing the power of data, we propose tailored solutions to meet specific challenges effectively.
+                <button class="card-btn" aria-label="Show More">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
 
               </div>
             </li>
 
             <li>
-              <div class="project-card">
+              <div class="service-card">
 
-                <figure class="card-banner img-holder" style="--width: 615; --height: 391;">
-                  <img src="./assets/images/project-2.png" width="615" height="391" loading="lazy" alt="3D Illustration"
-                    class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <div>
-                    <h3 class="h3">
-                      <a class="card-title hover:underline">Westpoint Security LTDA</a>
-                    </h3>
-
-                    <p class="card-tag">Sitio Web, Logo y Campaña en google ads</p>
-                  </div>
-
-
-
+                <div class="card-icon">
+                  <ion-icon name="desktop-outline"></ion-icon>
                 </div>
+
+                <h3 class="h3 title">Solutions</h3>
+
+                <p class="text">
+                  Utilizing advanced data analytics, we design specific solutions (models, dashboards, applications, etc.)
+                  that showcase the potential to address the given challenge effectively.
+                </p>
+
+                <button class="card-btn" aria-label="Show More">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
 
               </div>
             </li>
 
             <li>
-              <div class="project-card">
+              <div class="service-card">
 
-                <figure class="card-banner img-holder" style="--width: 390; --height: 391;">
-                  <img src="./assets/images/project-3.png" width="390" height="391" loading="lazy"
-                    alt="Statistics Mobile App" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <div>
-                    <h3 class="h3">
-                      <a class="card-title hover:underline">Agony Fitness</a>
-                    </h3>
-
-                    <p class="card-tag">Sitio Web, Logo</p>
-                  </div>
-
-                  <a href="#" class="card-link" aria-label="product details">
-                  </a>
-
+                <div class="card-icon">
+                  <ion-icon name="globe-outline"></ion-icon>
                 </div>
+
+                <h3 class="h3 title">Strategy</h3>
+
+                <p class="text">
+Empower decision-making with advanced data analytics, delivering concise insights for informed choices. Elevate strategies through precise data use for a new era of effectiveness.                </p>
+
+                <button class="card-btn" aria-label="Show More">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
 
               </div>
             </li>
 
-
-            <!--
-
-
-            <li>
-              <div class="project-card">
-
-                <figure class="card-banner img-holder" style="--width: 390; --height: 391;">
-                  <img src="./assets/images/project-4.png" width="390" height="391" loading="lazy"
-                    alt="Color Blending Effect" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <div>
-                    <h3 class="h3">
-                      <a href="#" class="card-title hover:underline">Color Blending Effect</a>
-                    </h3>
-
-                    <p class="card-tag">Design, Graphics</p>
-                  </div>
-
-                  <a href="#" class="card-link" aria-label="product details">
-                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="project-card">
-
-                <figure class="card-banner img-holder" style="--width: 390; --height: 391;">
-                  <img src="./assets/images/project-5.png" width="390" height="391" loading="lazy" alt="3D Animation"
-                    class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <div>
-                    <h3 class="h3">
-                      <a href="#" class="card-title hover:underline">3D Animation</a>
-                    </h3>
-
-                    <p class="card-tag">Design, Dimension</p>
-                  </div>
-
-                  <a href="#" class="card-link" aria-label="product details">
-                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-
-              </div>
-            </li>
-  -->
           </ul>
 
         </div>
@@ -445,66 +271,155 @@
 
 
       <!--
+        - #FEATURES
+      -->
 
-
-      <section class="section blog" id="blog" aria-label="blog">
+      <section class="section features" id="features">
         <div class="container">
 
-          <div class="title-wrapper">
-            <h2 class="h2 section-title">
-              Our inside <span class="span">news</span>.
-            </h2>
+          <h2 class="h2 section-title underline">Our Features</h2>
 
-            <a href="#" class="btn-link">
-              <span class="span">Check Our All News</span>
+          <ul class="features-list">
 
-              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-            </a>
-          </div>
+            <li>
+              <div class="features-card">
 
-          <ul class="grid-list">
+                <div class="icon">
+                  <ion-icon name="bulb-outline"></ion-icon>
+                </div>
+
+                <div class="content">
+                  <h3 class="h3 title">Data Architecture</h3>
+
+                  <p class="text">
+                    Developing robust and scalable data architecture solutions.                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="features-card">
+
+                <div class="icon">
+                  <ion-icon name="color-palette-outline"></ion-icon>
+                </div>
+
+                <div class="content">
+                  <h3 class="h3 title">Data Capture and Ingestion</h3>
+
+                  <p class="text">
+                    Implementing efficient methods for capturing and ingesting data.                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <figure class="features-banner">
+            <img src="./assets/images/feautres-banner.png" width="369" height="318" loading="lazy" alt="Features Banner"
+              class="w-100 banner-animation">
+          </figure>
+
+          <ul class="features-list">
+
+            <li>
+              <div class="features-card">
+
+                <div class="icon">
+                  <ion-icon name="code-slash-outline"></ion-icon>
+                </div>
+
+                <div class="content">
+                  <h3 class="h3 title">Data Preparation</h3>
+
+                  <p class="text">
+                    Cleaning, transforming, and organizing data for analysis.                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="features-card">
+
+                <div class="icon">
+                  <ion-icon name="rocket-outline"></ion-icon>
+                </div>
+
+                <div class="content">
+                  <h3 class="h3 title">Advanced Analytics</h3>
+
+                  <p class="text">
+                    Applying sophisticated analytical techniques to extract meaningful insights from data.                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <section class="section blog" id="blog">
+        <div class="container">
+
+          <h2 class="h2 section-title underline">Our Blog & News</h2>
+
+          <ul class="blog-list">
 
             <li>
               <div class="blog-card">
 
-                <div class="card-banner img-holder" style="--width: 595; --height: 391;">
-                  <img src="./assets/images/blog-1.png" width="595" height="391" loading="lazy"
-                    alt="Designer's Checklist for Every UX Project." class="img-cover">
+                <figure class="banner">
+                  <a href="#">
+                    <img src="./assets/images/blog-1.jpg" width="750" height="350" loading="lazy"
+                      alt="Vestibulum massa arcu, consectetu pellentesque scelerisque." class="img-cover">
+                  </a>
+                </figure>
 
-                  <button class="card-tag">Grid Layout</button>
+                <div class="content">
 
-                </div>
-
-                <div class="card-content">
-
-                  <ul class="meta-list">
-
-                    <li class="meta-item">
-                      <img src="./assets/images/author-1.png" width="18" height="18" loading="lazy" alt="Alice Williams"
-                        class="author-img">
-
-                      <p class="meta-item-text">Alice Williams</p>
-                    </li>
-
-                    <li class="meta-item">
-                      <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
-
-                      <time datetime="2022-12-20" class="meta-item-text">December 20, 2022</time>
-                    </li>
-
-                  </ul>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title hover:underline">
-                      Designer's Checklist for Every UX Project.
+                  <h3 class="h3 title">
+                    <a href="#">
+                      Vestibulum massa arcu, consectetu pellentesque scelerisque.
                     </a>
                   </h3>
 
-                  <a href="#" class="btn-link">
-                    <span class="span">Read more</span>
+                  <p class="text">
+                    Sed quis sagittis velit. Aliquam velit eros, bibendum ut massa et, consequat laoreet erat nam ac
+                    imperdiet.
+                  </p>
 
-                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                  </a>
+                  <div class="meta">
+
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="2022-03-07">7 March, 2022</time>
+                    </div>
+
+                    <button class="comment" aria-label="Comment">
+                      <ion-icon name="chatbubble-outline"></ion-icon>
+
+                      <data value="15">15</data>
+                    </button>
+
+                    <button class="share" aria-label="Share">
+                      <ion-icon name="share-social-outline"></ion-icon>
+                    </button>
+
+                  </div>
 
                 </div>
 
@@ -514,43 +429,45 @@
             <li>
               <div class="blog-card">
 
-                <div class="card-banner img-holder" style="--width: 595; --height: 391;">
-                  <img src="./assets/images/blog-2.png" width="595" height="391" loading="lazy"
-                    alt="Designer's Checklist for Every UX Project." class="img-cover">
+                <figure class="banner">
+                  <a href="#">
+                    <img src="./assets/images/blog-2.jpg" width="750" height="350" loading="lazy"
+                      alt="Quisque egestas iaculis felis eget placerat ut pulvinar mi." class="img-cover">
+                  </a>
+                </figure>
 
-                  <button class="card-tag">Grid Layout</button>
-                </div>
+                <div class="content">
 
-                <div class="card-content">
-
-                  <ul class="meta-list">
-
-                    <li class="meta-item">
-                      <img src="./assets/images/author-2.png" width="18" height="18" loading="lazy" alt="Jaxson Geldit"
-                        class="author-img">
-
-                      <p class="meta-item-text">Jaxson Geldit</p>
-                    </li>
-
-                    <li class="meta-item">
-                      <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
-
-                      <time datetime="2022-12-20" class="meta-item-text">December 20, 2022</time>
-                    </li>
-
-                  </ul>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title hover:underline">
-                      Designer's Checklist for Every UX Project.
+                  <h3 class="h3 title">
+                    <a href="#">
+                      Quisque egestas iaculis felis eget placerat ut pulvinar mi.
                     </a>
                   </h3>
 
-                  <a href="#" class="btn-link">
-                    <span class="span">Read more</span>
+                  <p class="text">
+                    Sed quis sagittis velit. Aliquam velit eros, bibendum ut massa et, consequat laoreet erat nam ac
+                    imperdiet.
+                  </p>
 
-                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                  </a>
+                  <div class="meta">
+
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="2022-03-07">7 March, 2022</time>
+                    </div>
+
+                    <button class="comment" aria-label="Comment">
+                      <ion-icon name="chatbubble-outline"></ion-icon>
+
+                      <data value="15">15</data>
+                    </button>
+
+                    <button class="share" aria-label="Share">
+                      <ion-icon name="share-social-outline"></ion-icon>
+                    </button>
+
+                  </div>
 
                 </div>
 
@@ -560,43 +477,93 @@
             <li>
               <div class="blog-card">
 
-                <div class="card-banner img-holder" style="--width: 595; --height: 391;">
-                  <img src="./assets/images/blog-3.png" width="595" height="391" loading="lazy"
-                    alt="Designer's Checklist for Every UX Project." class="img-cover">
+                <figure class="banner">
+                  <a href="#">
+                    <img src="./assets/images/blog-3.jpg" width="750" height="350" loading="lazy"
+                      alt="Fusce sem ligula, imperdiet sed nisi sit amet, euismod posuere." class="img-cover">
+                  </a>
+                </figure>
 
-                  <button class="card-tag">Grid Layout</button>
-                </div>
+                <div class="content">
 
-                <div class="card-content">
-
-                  <ul class="meta-list">
-
-                    <li class="meta-item">
-                      <img src="./assets/images/author-1.png" width="18" height="18" loading="lazy" alt="Cooper Saris"
-                        class="author-img">
-
-                      <p class="meta-item-text">Cooper Saris</p>
-                    </li>
-
-                    <li class="meta-item">
-                      <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
-
-                      <time datetime="2022-12-20" class="meta-item-text">December 20, 2022</time>
-                    </li>
-
-                  </ul>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title hover:underline">
-                      Designer's Checklist for Every UX Project.
+                  <h3 class="h3 title">
+                    <a href="#">
+                      Fusce sem ligula, imperdiet sed nisi sit amet, euismod posuere.
                     </a>
                   </h3>
 
-                  <a href="#" class="btn-link">
-                    <span class="span">Read more</span>
+                  <p class="text">
+                    Sed quis sagittis velit. Aliquam velit eros, bibendum ut massa et, consequat laoreet erat nam ac
+                    imperdiet.
+                  </p>
 
-                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  <div class="meta">
+
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="2022-03-07">7 March, 2022</time>
+                    </div>
+
+                    <button class="comment" aria-label="Comment">
+                      <ion-icon name="chatbubble-outline"></ion-icon>
+
+                      <data value="15">15</data>
+                    </button>
+
+                    <button class="share" aria-label="Share">
+                      <ion-icon name="share-social-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="banner">
+                  <a href="#">
+                    <img src="./assets/images/blog-4.jpg" width="750" height="350" loading="lazy"
+                      alt="Donec feugiat mollis nisi in dignissim. Morbi sollicitudin quis." class="img-cover">
                   </a>
+                </figure>
+
+                <div class="content">
+
+                  <h3 class="h3 title">
+                    <a href="#">
+                      Donec feugiat mollis nisi in dignissim. Morbi sollicitudin quis.
+                    </a>
+                  </h3>
+
+                  <p class="text">
+                    Sed quis sagittis velit. Aliquam velit eros, bibendum ut massa et, consequat laoreet erat nam ac
+                    imperdiet.
+                  </p>
+
+                  <div class="meta">
+
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="2022-03-07">7 March, 2022</time>
+                    </div>
+
+                    <button class="comment" aria-label="Comment">
+                      <ion-icon name="chatbubble-outline"></ion-icon>
+
+                      <data value="15">15</data>
+                    </button>
+
+                    <button class="share" aria-label="Share">
+                      <ion-icon name="share-social-outline"></ion-icon>
+                    </button>
+
+                  </div>
 
                 </div>
 
@@ -611,8 +578,7 @@
     </article>
   </main>
 
-  - #BLOG
--->
+
 
 
 
@@ -621,84 +587,194 @@
   -->
 
   <footer class="footer">
-    <div class="container">
 
-      <div class="footer-top section">
+    <div class="footer-top section">
+      <div class="container">
 
         <div class="footer-brand">
 
-          <a href="#" class="logo">
-            <img src="./assets/images/logo.png" width="209" height="52" alt="dprod logo">
-          </a>
+          <a href="#" class="logo">Takk Consulting</a>
 
-          <a class="footer-link">info@takkmarketing.co</a>
-
-          <a href="tel:+573117053860" class="footer-link">+57 3117053860</a>
+          <p class="text">
+            Unlock the full potential of your business with expert consulting services in data analytics.
+          </p>
 
           <ul class="social-list">
-
-
-
-            <li>
-              <a href="https://instagram.com/takk.col/" target="_blank" class="social-link">
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
-            </li>
-
-
-              <!--
 
             <li>
               <a href="#" class="social-link">
                 <ion-icon name="logo-facebook"></ion-icon>
               </a>
             </li>
-            - #FOOTER
-          -->
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
 
           </ul>
 
         </div>
 
-
         <ul class="footer-list">
 
           <li>
-            <p class="h4 footer-list-title">Servicios</p>
+            <p class="footer-list-title">Our links</p>
           </li>
 
           <li>
-            <a  class="footer-link">Mercadeo Digital</a>
-          </li>
-
-
-          <li>
-            <a class="footer-link">Optimización SEO</a>
+            <a href="#" class="footer-link">Home</a>
           </li>
 
           <li>
-            <a class="footer-link">Creación de Contenido</a>
+            <a href="#" class="footer-link">About Us</a>
           </li>
 
           <li>
-            <a  class="footer-link">Comercio Electrónico</a>
+            <a href="#" class="footer-link">Services</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Team</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Blog</a>
           </li>
 
         </ul>
 
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Our Services</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Strategy & Research</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Web Development</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Web Solution</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Digital Marketing</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">App Design</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Other links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">FAQ</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Portfolio</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms & Conditions</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Support</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Contact Us</p>
+          </li>
+
+          <li class="footer-item">
+
+            <div class="footer-item-icon">
+              <ion-icon name="call"></ion-icon>
+            </div>
+
+            <div>
+              <a href="tel:+2484214313" class="footer-item-link">+248-421-4313</a>
+              <a href="tel:+2486871365" class="footer-item-link">+248-687-1365</a>
+            </div>
+
+          </li>
+
+          <li class="footer-item">
+
+            <div class="footer-item-icon">
+              <ion-icon name="mail"></ion-icon>
+            </div>
+
+            <div>
+              <a href="mailto:info@takkagency.com" class="footer-item-link">info@takkagency.com</a>
+              <a href="mailto:help@takkagency.com" class="footer-item-link">help@takkagency.com</a>
+            </div>
+
+          </li>
+
+          <li class="footer-item">
+
+            <div class="footer-item-icon">
+              <ion-icon name="location"></ion-icon>
+            </div>
+
+            <address class="footer-item-link">
+              Bogotá, Colombia
+            </address>
+
+          </li>
+
+        </ul>
 
       </div>
-
-      <div class="footer-bottom">
-
-        <p class="copyright">
-          Copyright 2022 TAKK S.A.S.
-        </p>
-
-      </div>
-
     </div>
+
+    <div class="footer-bottom">
+      <p class="copyright">
+        &copy; 2024 <a href="#" class="copyright-link">Takk Consulting</a>. All Right Reserved
+      </p>
+    </div>
+
   </footer>
+
+
+
+
+
+  <!--
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top  active" aria-label="Go To Top" data-go-top>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
 
 
 
@@ -707,7 +783,7 @@
   <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js" defer></script>
+  <script src="./assets/js/script.js"></script>
 
   <!--
     - ionicon link
